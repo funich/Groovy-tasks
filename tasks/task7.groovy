@@ -11,7 +11,7 @@ def encryptThis(str){
         w += word[1]
         result_words += w
     }
-    return [(str): result_words]
+    return result_words
 }
 
 //print encryptThis("hello world")
