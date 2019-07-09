@@ -1,24 +1,21 @@
-def encryptThis(text){
-    def words = text.split(' ')
-    def toAscii = { ch -> ((int) ch).toString() }
-    def result = ''
-    def pars = { word ->
-        word = word.split ('')
-        if (word.size() == 1){
-            return toAscii(word)
+def encryptThis(String str) {
+    def a = str.split()
 
-        }
-        else {
-            word[0] = toAscii(word[0])
-            def flag = word[1]
-            word[1] = word[-1]
-            word[-1] = flag
-            return word.join()
-        }
+    def charToAscii = { chr ->
+        ((int) chr).toString()
     }
-    words.each{ word-> result+=' '+( pars(word))}
-    return result
-
+    def encryptWord = { word ->
+        if (word.size() == 1) {
+            return charToAscii(word)
+        }
+        def chars = word.split('')
+        def tmp = chars[1]
+        chars[0] = charToAscii(chars[0])
+        chars[1] = chars[-1]
+        chars[-1] = tmp
+        return chars.join("")
+    }
+    return a.collect(encryptWord).join(" ")
 }
 
 return this
