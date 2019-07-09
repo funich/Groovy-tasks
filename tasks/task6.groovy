@@ -1,11 +1,11 @@
 import groovy.json.JsonSlurper
 
 def adults(def str) {
-    def map = new JsonSlurper().parseText(str)
-    map.removeAll {
+	if (str instanceof String) str = new JsonSlurper().parseText(str)
+    str.removeAll {
         it.value < 18
-    }
-    return map
+   	}
+    return str
 }
 
 return this
