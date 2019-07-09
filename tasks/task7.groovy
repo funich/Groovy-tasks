@@ -1,17 +1,18 @@
 def encryptThis(str){
     words = str.split(" ")
-    result = [:]
+    result_words = ""
+    first_word = true
     for(word in words){
-        w = ""
+        w = first_word ? "" : " "
+        first_word = false
         w += (int) word[0]
         w += word[-1]
         w += word[2..-2]
         w += word[1]
-        result.put(word, w)
+        result_words += w
     }
-
-    return result
+    return [(str): result_words]
 }
 
-//print encryptThis("hello world peace customer")
+//print encryptThis("hello world")
 return this
