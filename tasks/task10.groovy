@@ -1,5 +1,5 @@
 def String urlText(String string) {
-    return string.toURL().text
+    return URL(string).getText()
 }
 
 return this
