@@ -13,13 +13,10 @@ def encryptThis(String a) {
         chars[0] = charToAscii(chars[0])
         chars[1] = chars[-1]
         chars[-1] = tmp
-        return chars.join()
+        return chars.join("")
     }
 
     return list.collect(encryptWord).join(" ")
 }
-
-//def ex = "first second third"
-//println(encryptThis(ex))
 
 return this
