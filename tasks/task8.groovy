@@ -11,7 +11,7 @@ def String parseAndFilterJson(String string) {
     }
     map_json.each { name, age ->
         if (digitsum(age) == 9) {
-            digitsum(age)
+            println(digitsum(age))
             result_map.put(name, age)
         }
     }
