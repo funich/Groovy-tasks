@@ -3,4 +3,4 @@ def gstring(key, int pos){
 
     return text.replace(/$pos()/,"$pos($key)")
 }
-println(gstring("test", 3))
+return this
