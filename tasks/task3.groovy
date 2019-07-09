@@ -1,3 +1,3 @@
-boolean isSublist = [2, 3, 5].containsAll([2, 5])
+boolean isSublist = [].containsAll([])
 println(isSublist)
 return this
