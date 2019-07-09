@@ -1,3 +1,4 @@
+
 def mulEvenOdd(def arr){
     def result=[]
     arr.each {
