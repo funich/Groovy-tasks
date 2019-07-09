@@ -1,3 +1,3 @@
-boolean isSublist = [2, 3, 5].intersect([2, 4])
+boolean isSublist = [2, 3, 5].containsAll([2, 5])
 println(isSublist)
 return this
