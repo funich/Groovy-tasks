@@ -4,7 +4,7 @@ import com.mnt_lab.*
 def testRunner = new tests()
 node {
 	stage('Checkout') {
-		git branch:'vulantsau',  url: 'https://github.com/MNT-Lab/Groovy-tasks.git'
+		git branch: env.JOB_NAME,  url: 'https://github.com/MNT-Lab/Groovy-tasks.git'
 	}
 	testRunner.exec()
 }
