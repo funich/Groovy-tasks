@@ -1,5 +1,4 @@
 def mulEvenOdd(List inlist) {
-
   def outlist = []
   inlist.each {
     def item = it.toInteger()
