@@ -18,5 +18,4 @@ def String parseAndFilterJson(String string) {
     return JsonOutput.toJson(result_map)
 }
 
-//println(parseAndFilterJson("{\"Kate\":18,\"Alan\":16,\"Osvald\":27}"))
-println(parseAndFilterJson("{}"))
+return this
