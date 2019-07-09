@@ -15,8 +15,7 @@ def String parseAndFilterJson(String string) {
         }
     }
 
-    return JsonOutput.toJson(result_map).toString()
-    //return "{\"Kate\":18,\"Osvald\":27}"
+    return JsonOutput.toJson(result_map)
 }
 
 return this
