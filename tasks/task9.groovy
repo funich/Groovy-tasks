@@ -1,5 +1,5 @@
 def exec(str){
-    str.execute().text.trim()
+    return str.execute().text.trim()
 }
 
 //print exec("date")
