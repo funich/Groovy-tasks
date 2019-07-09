@@ -1,5 +1,4 @@
 def sum(int a, int b) {
-  return 42
+  return a + b
 }
-
 return this
