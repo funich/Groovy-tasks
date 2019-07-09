@@ -1,4 +1,4 @@
-def adults(List list){
+def adults(list) {
 
     def approved = [:]
     list.each { key, value ->
@@ -8,6 +8,5 @@ def adults(List list){
     return approved
 }
 
-//println(adults([Kate: 18, Henry: 16, Lucas: 89]))
 
 return this
