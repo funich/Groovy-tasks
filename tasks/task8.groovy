@@ -10,8 +10,8 @@ def parseAndFilterJson(String text) {
             res.put(name, years)
         }
 
-        return JsonOutput.toJson(res)
     }
+    return JsonOutput.toJson(res)
 }
 return this
 
