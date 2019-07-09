@@ -2,7 +2,7 @@
 // define, whether input string have a Ip format.
 // Example - isSublist(10.0.152.164) == true
 
-def isSublist(String s)
+def isIp(String s)
 {
   def IP_Range = 0..255
   def numbers=s.split('\\.')
