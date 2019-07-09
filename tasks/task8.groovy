@@ -1,6 +1,9 @@
 import groovy.json.JsonSlurper
 import groovy.json.JsonOutput
 
+def digitsum = { number ->
+    a = Integer.toString(number, 10).collect { Integer.parseInt(it, 10) }.sum()
+}
 
 def String parseAndFilterJson(String string) {
     def jsonSlurper = new JsonSlurper()
