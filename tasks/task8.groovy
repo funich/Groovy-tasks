@@ -1,5 +1,5 @@
-import groovy.json.JsonBuilder
 import groovy.json.JsonSlurper
+import groovy.json.JsonOutput
 
 
 def parseAndFilterJson(str){
@@ -14,10 +14,8 @@ def parseAndFilterJson(str){
             result.put(it.key, it.value)
     }
 
-    builder = new JsonBuilder()
-    builder(result)
 
-    return builder.toString()
+    return JsonOutput.toJson(result)
 }
 
 print parseAndFilterJson("{\"Kate\":18,\"Alan\":16,\"Osvald\":27}")
