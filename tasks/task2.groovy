@@ -1,4 +1,4 @@
-int[] mulEvenOdd(int[]arr){
+def mulEvenOdd(int[]arr){
     int[] result=[]
     arr.each {
         if (it%2==0){
