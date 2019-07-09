@@ -15,7 +15,7 @@ def String parseAndFilterJson(String string) {
         }
     }
 
-    return JsonOutput.toJson(result_map)
+    return JsonOutput.toJson(result_map).toString()
 }
 
 return this
