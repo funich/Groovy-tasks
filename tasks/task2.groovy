@@ -1,5 +1,5 @@
-int[] mulEvenOdd(int[]arr){
-    int[] result=[]
+def mulEvenOdd(def arr){
+    def result=[]
     arr.each {
         if (it%2==0){
             it*=2
