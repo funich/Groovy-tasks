@@ -8,13 +8,13 @@ def encryptThis(String str) {
        if (word.size() == 1) {
            return charToAscii(word)
         }
-        def chars = word.split()
-        chars[0] = charToAscii(chars[0])
+        def chars = word.split('')
         def tmp = chars[1]
-        chars[1] - chars[-1]
+        chars[0] = charToAscii(chars[0])
+        chars[1] = chars[-1]
         chars[-1] = tmp
         return chars.join("")
         }
-    return a.collect(encryptWord.join(""))
+    return a.collect(encryptWord).join(" ")
 }
 return this
