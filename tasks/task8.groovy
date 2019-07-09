@@ -10,8 +10,8 @@ def String parseAndFilterJson(String string) {
         a = Integer.toString(number, 10).collect { Integer.parseInt(it, 10) }.sum()
     }
     map_json.each { name, age ->
+        println(digitsum(age))
         if (digitsum(age) == 9) {
-            println(digitsum(age))
             result_map.put(name, age)
         }
     }
