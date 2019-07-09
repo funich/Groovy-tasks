@@ -18,5 +18,5 @@ def parseAndFilterJson(str){
     return JsonOutput.toJson(result)
 }
 
-print parseAndFilterJson("{\"Kate\":18,\"Alan\":16,\"Osvald\":27}")
+//print parseAndFilterJson("{\"Kate\":18,\"Alan\":16,\"Osvald\":27}")
 return this
