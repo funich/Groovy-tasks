@@ -6,8 +6,8 @@ def gstring(String string, int num) {
        w = ''
        if (count == num) {
            w = string
+           done += "${count}(${w}) "
        }
-       done += "${count}(${w}) "
    }
     return done
 }
