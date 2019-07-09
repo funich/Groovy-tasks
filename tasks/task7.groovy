@@ -12,7 +12,7 @@ def String encryptThis(String string) {
             encrypted_word[1] = encrypted_word[-1]
             encrypted_word[-1] = temp
         }
-        list_of_encrypted_words.add(encrypted_word.join())
+        list_of_encrypted_words.add(encrypted_word.join(''))
     }
 
     return list_of_encrypted_words.join(' ')
