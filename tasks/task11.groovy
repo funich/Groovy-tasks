@@ -10,4 +10,4 @@ def gstring(String str, int num) {
    }
     return done
 }
-print gstring("test", 2)
+return this
