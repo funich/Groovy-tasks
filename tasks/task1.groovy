@@ -1,5 +1,6 @@
-def sum(int a, int b) {
-  return 42
-}
+//task1.groovy - function int sum(int, int), summ 2 numbers. Example - sum(1,4) == 5
 
-return this
+int summ(int a, int b) {
+    summ = a + b
+}
+print(summ(1, 4))
