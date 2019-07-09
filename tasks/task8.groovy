@@ -1,3 +1,7 @@
+import groovy.json.JsonSlurper
+import groovy.json.JsonOutput
+
+
 def String parseAndFilterJson(String string) {
     def jsonSlurper = new JsonSlurper()
     def map_json = jsonSlurper.parseText(string)
