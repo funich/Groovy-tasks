@@ -9,9 +9,6 @@ def String parseAndFilterJson(String string) {
     def jsonSlurper = new JsonSlurper()
     def map_json = jsonSlurper.parseText(string)
     def result_map = [:]
-    def digitsum = { number ->
-        a = Integer.toString(number, 10).collect { Integer.parseInt(it, 10) }.sum()
-    }
     map_json.each { name, age ->
         println(digitsum(age))
         if (digitsum(age) == 9) {
