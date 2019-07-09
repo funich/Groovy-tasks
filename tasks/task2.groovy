@@ -6,9 +6,7 @@
 def mulEvenOdd(x)
 {
   def y=[]
-  x.each { z ->
-    y+=(z*=z%2==1?3:2)
-  }
+  x.each { z -> y+=z*=z%2?3:2 }
   return y
 }
 
