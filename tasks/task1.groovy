@@ -1,5 +1,7 @@
-def sum(int a, int b) {
-  return 42
+def summ(int x, int y)
+{
+  return x+y
 }
-
 return this
+
+
