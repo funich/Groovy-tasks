@@ -1,5 +1,8 @@
 def sum(int a, int b) {
-  return 42
+    int c = a+b
+    println(c)
 }
 
-return this
+
+sum(10,5);
+
